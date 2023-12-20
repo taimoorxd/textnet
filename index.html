@@ -12,6 +12,8 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 <body>
 
@@ -29,11 +31,11 @@
 <a class="nav-link" href="#">Contact</a>
 </li>
 <li class="nav-item">
-<a class="nav-link disabled" href="#">Premium Items</a>
+<a class="nav-link disabled" href="#">Blog</a>
 </li>
 </ul>
 <form class="form-inline my-2 my-lg-0">
-<input class="form-control mr-sm-2" type="search" placeholder="Search">
+<input class="form-control mr-sm-2" type="search" placeholder="Search" id="searchInput">
 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 </form>
 </div>
@@ -53,11 +55,42 @@
 <!-- <span class="badge text-bg-dark">Dark</span> -->
 </div>
 
-<div class="mainimage">
+
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="reval foundation.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="reval foundation.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="reval foundation.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+<!-- main image off -->
+<!-- <div class="mainimage">
 
 <img src="reval foundation.png" class="img-fluid" alt="...">
 
-</div>
+</div> -->
 
 
 <div class="main2head">
@@ -66,30 +99,68 @@
 
 </div>
 
+<div class="psdi">
+    <!-- <span class="badge text-bg-primary">Facebook</span> -->
+    <!-- <span class="badge text-bg-danger">Instagram</span> -->
+    <!-- <span class="badge text-bg-success">Success</span> -->
+    <!-- <span class="badge text-bg-danger">Danger</span> -->
+    <span class="badge text-bg-warning">Paid Apks</span>
+    <span class="badge text-bg-info">Contact us</span>
+    <!-- <span class="badge text-bg-light">Light</span> -->
+    <!-- <span class="badge text-bg-dark">Dark</span> -->
+    </div>
+    
+
 
 <div class="card-container">
 <div class="card">
 <img src="https://static.ffx.io/images/$zoom_2.3309%2C$multiply_0.5855%2C$ratio_1%2C$width_1059%2C$x_678%2C$y_162/t_crop_custom/q_86%2Cf_auto/89dcd9ed59d16f7c77f001daa35c38e30b16c8dc" alt="Card Image">
 <div class="card-title">Andrew Tate</div>
-<div class="card-description"> Andrew Tate offers 15 free courses; join the tech <a href="#"> revolution </a> for knowledge without any cost. </div>
+<div class="card-description"> Andrew Tate offers 15 free courses; join the tech <a href="#"> revolution </a> for knowledge without any cost Tech revolution. </div>
+<a href="https://mega.nz/folder/kmdllKAb#WMTw7ktb3FTo833xZSp1qw" class="card-button">Watch Now</a>
+</div>
+
+<div class="card">
+<img src="AMAZON (FBA) TR .png" alt="Card Image">
+<div class="card-title">Shahid Amazon</div>
+<div class="card-description"> <a href=""> Tech Revolution's </a> free Amazon course by Shahid Anwar offers valuable insights for online business success.</div>
 <a href="#" class="card-button">Watch Now</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/150" alt="Card Image">
-<div class="card-title">Card Title 2</div>
-<div class="card-description">This is a description for Card 2. It can contain additional details about the card.</div>
-<a href="#" class="card-button">Learn More</a>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/150" alt="Card Image">
-<div class="card-title">Card Title 2</div>
-<div class="card-description">This is a description for Card 2. It can contain additional details about the card.</div>
+<img src="Enablers TR .png" alt="Card Image">
+<div class="card-title">Enablers Amazon</div>
+<div class="card-description"> <a href=""> Tech Revolution's </a> free Enablers Amazon course empowers with vital e-commerce skills for Amazon success.</div>
 <a href="#" class="card-button">Learn More</a>
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+<script>
+    function searchCards() {
+        var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        var cards = document.querySelectorAll('.card-container .card');
+
+        cards.forEach(function(card) {
+            var cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+
+            if (cardtitle.includes(searchTerm)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
 
 </body>
 </html>
